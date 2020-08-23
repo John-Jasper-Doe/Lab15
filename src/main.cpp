@@ -8,9 +8,9 @@
 
 /* See the license in the file "LICENSE.txt" in the root directory. */
 
-#include <fstream>
-#include <iostream>
+#include "core/clusterization.hpp"
 #include <boost/program_options.hpp>
+#include <iostream>
 
 namespace {
 
@@ -63,6 +63,8 @@ int main(int argc, const char* argv[]) {
     std::cerr << e.what() << std::endl;
     return EXIT_FAILURE;
   }
+
+  kkmeans::core::clusterize(prm.k_means);
 
   return EXIT_SUCCESS;
 }
