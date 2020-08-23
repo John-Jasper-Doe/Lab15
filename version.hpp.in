@@ -1,0 +1,18 @@
+/**
+ * @file version.hpp
+ * @brief Project version announcement.
+ */
+
+/* See the license in the file "LICENSE.txt" in the root directory. */
+
+#ifndef KKMEANS_VERSION_HPP_
+#define KKMEANS_VERSION_HPP_
+
+#define KKMEANS_MAJOR @KKMEANS_MAJOR@
+#define KKMEANS_MINOR @KKMEANS_MINOR@
+#define KKMEANS_PATCH @KKMEANS_PATCH@
+
+#define KKMEANS_VERSION \
+    (KKMEANS_MAJOR * 10000 + KKMEANS_MINOR * 100 + KKMEANS_PATCH)
+
+#endif /* KKMEANS_VERSION_HPP_ */
