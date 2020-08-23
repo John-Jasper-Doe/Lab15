@@ -9,4 +9,12 @@ Homework "Clusterization"
 Manual: https://john-jasper-doe.github.io/Lab15/index.html
 
 
-## About
+
+## Running
+To work, you need to install "gnuplot":
+
+      $ sudo apt-get install gnuplot -y
+
+Data from the "test_data" directory must be copied to the program directory. Configure permission to run scripts ("run_rnd_dat.sh", "run_sky_dat.sh") for execution. Run scripts one by one.
+
+NOTE: Maximum 5 clusters, because only 5 colors are set for drawing the graph. Otherwise, you will have to add it by hand)))

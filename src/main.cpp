@@ -27,7 +27,7 @@ void get_param(const int argc, const char* const argv[], param_t& param) {
   po::options_description desc("Options: ");
   desc.add_options()
       ("help,h", "this help")
-      ("k", po::value<std::size_t>(), "number of clusters for k-means algorithm");
+      ("kmeans,k", po::value<std::size_t>(), "number of clusters for k-means algorithm");
   // clang-format on
 
   po::variables_map vm;
@@ -44,7 +44,9 @@ void get_param(const int argc, const char* const argv[], param_t& param) {
     exit(0);
   }
 
-  if (vm.count("k"))
+  if (vm.count("kmeans"))
+    param.k_means = vm["kmeans"].as<std::size_t>();
+  else if (vm.count("k"))
     param.k_means = vm["k"].as<std::size_t>();
   else
     throw std::invalid_argument("Number of clusters was not set");
