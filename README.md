@@ -9,7 +9,6 @@ Homework "Clusterization"
 Manual: https://john-jasper-doe.github.io/Lab15/index.html
 
 
-
 ## Running
 To work, you need to install "gnuplot":
 
