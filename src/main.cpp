@@ -12,14 +12,17 @@
 #include <boost/program_options.hpp>
 #include <iostream>
 
+/** @brief Anonymous namespace. */
 namespace {
 
+/** @brief Input data struct. */
 struct param {
   std::size_t k_means{0};
 };
 
 using param_t = param;
 
+/** @brief Get option on cmd line. */
 void get_param(const int argc, const char* const argv[], param_t& param) {
   namespace po = boost::program_options;
 
@@ -52,6 +55,35 @@ void get_param(const int argc, const char* const argv[], param_t& param) {
     throw std::invalid_argument("Number of clusters was not set");
 }
 
+/**
+ * @brief Reading data from an input stream.
+ *
+ * @details
+ * Data is received from the input stream, then read line by line, parsed and
+ * formed into a data vector.
+ *
+ * @param [in] istrm - the input stream where the data comes from.
+ * @return Data vector ready.
+ */
+kkmeans::core::datas_t read_from(std::istream& istrm) {
+  std::vector<kkmeans::core::sample_t> res;
+
+  while (istrm) {
+    std::string line;
+    istrm >> line;
+
+    if (!line.empty()) {
+      kkmeans::core::sample_t dot;
+      std::size_t sep_pos = line.find(';');
+      dot(0) = std::stod(line.substr(0, sep_pos));
+      dot(1) = std::stod(line.substr(sep_pos + 1, line.size() - sep_pos - 1));
+      res.push_back(std::move(dot));
+    }
+  }
+
+  return res;
+}
+
 } /* :: */
 
 /** @brief Main entry point */
@@ -66,7 +98,13 @@ int main(int argc, const char* argv[]) {
     return EXIT_FAILURE;
   }
 
-  kkmeans::core::clusterize(prm.k_means);
+  kkmeans::core::datas_t input_data = read_from(std::cin);
+  kkmeans::core::clusterize clust(std::move(input_data));
+  kkmeans::core::clust_datas_t output_data = clust.exec(prm.k_means);
+
+  for (const auto& data : output_data) {
+    std::cout << data.x << ';' << data.y << ';' << data.clust << '\n';
+  }
 
   return EXIT_SUCCESS;
 }
