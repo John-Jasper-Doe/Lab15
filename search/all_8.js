@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sample_5ftype',['sample_type',['../namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html#aa9195989e9ad1ab0827330375da1eaf9',1,'kkmeans::core::anonymous_namespace{clusterization.cpp}']]]
+  ['main',['main',['../main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

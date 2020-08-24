@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['param',['param',['../structanonymous__namespace_02main_8cpp_03_1_1param.html',1,'anonymous_namespace{main.cpp}']]]
+  ['clust_5fdata',['clust_data',['../structkkmeans_1_1core_1_1clust__data.html',1,'kkmeans::core']]],
+  ['clusterize',['clusterize',['../classkkmeans_1_1core_1_1clusterize.html',1,'kkmeans::core']]]
 ];

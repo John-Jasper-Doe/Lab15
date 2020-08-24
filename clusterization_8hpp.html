@@ -63,16 +63,18 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">clusterization.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Clustering function declaration.  
+<p>Definition of the class "Clusterize".  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<div class="textblock"><code>#include &lt;dlib/clustering.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for clusterization.hpp:</div>
 <div class="dyncontent">
@@ -85,13 +87,22 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="clusterization_8hpp__dep__incl.png" border="0" usemap="#src_2core_2clusterization_8hppdep" alt=""/></div>
 <map name="src_2core_2clusterization_8hppdep" id="src_2core_2clusterization_8hppdep">
-<area shape="rect" id="node2" href="clusterization_8cpp.html" title="src/core/clusterization.cpp" alt="" coords="5,80,197,107"/>
+<area shape="rect" id="node2" href="clusterization_8cpp.html" title="Implimentation of the class &quot;Clusterize&quot;. " alt="" coords="5,80,197,107"/>
 <area shape="rect" id="node3" href="main_8cpp.html" title="Main file in this project. " alt="" coords="222,80,327,107"/>
 </map>
 </div>
 </div>
 <p><a href="clusterization_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkkmeans_1_1core_1_1clust__data.html">kkmeans::core::clust_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Output data struct.  <a href="structkkmeans_1_1core_1_1clust__data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkkmeans_1_1core_1_1clusterize.html">kkmeans::core::clusterize</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Clusterize class.  <a href="classkkmeans_1_1core_1_1clusterize.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacekkmeans"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans.html">kkmeans</a></td></tr>
@@ -101,14 +112,18 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacekkmeans_1_1core"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace of the "Core". <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aafcf93675c47ae4a31a0827c0dd66576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core.html#aafcf93675c47ae4a31a0827c0dd66576">kkmeans::core::clusterize</a> (std::size_t k)</td></tr>
-<tr class="memdesc:aafcf93675c47ae4a31a0827c0dd66576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clustering function.  <a href="namespacekkmeans_1_1core.html#aafcf93675c47ae4a31a0827c0dd66576">More...</a><br /></td></tr>
-<tr class="separator:aafcf93675c47ae4a31a0827c0dd66576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa534cd35ad94e0f7281a72732661f9fd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core.html#aa534cd35ad94e0f7281a72732661f9fd">kkmeans::core::clust_datas_t</a> = std::vector&lt; core::clust_data &gt;</td></tr>
+<tr class="separator:aa534cd35ad94e0f7281a72732661f9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dc05d72b1a5365d67335395807bf51"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core.html#ae8dc05d72b1a5365d67335395807bf51">kkmeans::core::datas_t</a> = std::vector&lt; sample_t &gt;</td></tr>
+<tr class="memdesc:ae8dc05d72b1a5365d67335395807bf51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input data type.  <a href="namespacekkmeans_1_1core.html#ae8dc05d72b1a5365d67335395807bf51">More...</a><br /></td></tr>
+<tr class="separator:ae8dc05d72b1a5365d67335395807bf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6ccf517070e6792fda21ad08240169"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core.html#a2a6ccf517070e6792fda21ad08240169">kkmeans::core::sample_t</a> = dlib::matrix&lt; double, 2, 1 &gt;</td></tr>
+<tr class="separator:a2a6ccf517070e6792fda21ad08240169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Clustering function declaration. </p>
+<div class="textblock"><p>Definition of the class "Clusterize". </p>
 <dl class="section author"><dt>Author</dt><dd>Maxim <a href="#" onclick="location.href='mai'+'lto:'+'joh'+'n.'+'jas'+'pe'+'r.d'+'oe'+'@gm'+'ai'+'l.c'+'om'; return false;">john.<span style="display: none;">.nosp@m.</span>jasp<span style="display: none;">.nosp@m.</span>er.do<span style="display: none;">.nosp@m.</span>e@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a> </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020 </dd></dl>
 </div></div><!-- contents -->

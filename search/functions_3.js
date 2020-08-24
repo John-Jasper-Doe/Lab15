@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['read_5ffrom',['read_from',['../namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html#ab4b66bbd8bee4f5cfb332c75db1f2b6b',1,'kkmeans::core::anonymous_namespace{clusterization.cpp}']]]
+  ['main',['main',['../main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main.cpp']]]
 ];

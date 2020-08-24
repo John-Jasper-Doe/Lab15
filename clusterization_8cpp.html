@@ -63,25 +63,21 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">clusterization.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implimentation of the class "Clusterize".  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="clusterization_8hpp_source.html">clusterization.hpp</a>&quot;</code><br />
-<code>#include &lt;dlib/clustering.h&gt;</code><br />
-<code>#include &lt;dlib/rand.h&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;istream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for clusterization.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="clusterization_8cpp__incl.png" border="0" usemap="#src_2core_2clusterization_8cpp" alt=""/></div>
 <map name="src_2core_2clusterization_8cpp" id="src_2core_2clusterization_8cpp">
-<area shape="rect" id="node2" href="clusterization_8hpp.html" title="Clustering function declaration. " alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node2" href="clusterization_8hpp.html" title="Definition of the class &quot;Clusterize&quot;. " alt="" coords="58,80,197,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -93,27 +89,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacekkmeans_1_1core"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core.html">kkmeans::core</a></td></tr>
 <tr class="memdesc:namespacekkmeans_1_1core"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace of the "Core". <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html">kkmeans::core::anonymous_namespace{clusterization.cpp}</a></td></tr>
-<tr class="memdesc:namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anonymous namespace. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a855ba268344d6239d1a908a2b967359e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html#a855ba268344d6239d1a908a2b967359e">kkmeans::core::anonymous_namespace{clusterization.cpp}::kernel_type</a> = dlib::radial_basis_kernel&lt; sample_type &gt;</td></tr>
-<tr class="separator:a855ba268344d6239d1a908a2b967359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9195989e9ad1ab0827330375da1eaf9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html#aa9195989e9ad1ab0827330375da1eaf9">kkmeans::core::anonymous_namespace{clusterization.cpp}::sample_type</a> = dlib::matrix&lt; double, 2, 1 &gt;</td></tr>
-<tr class="separator:aa9195989e9ad1ab0827330375da1eaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aafcf93675c47ae4a31a0827c0dd66576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core.html#aafcf93675c47ae4a31a0827c0dd66576">kkmeans::core::clusterize</a> (std::size_t k)</td></tr>
-<tr class="memdesc:aafcf93675c47ae4a31a0827c0dd66576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clustering function.  <a href="namespacekkmeans_1_1core.html#aafcf93675c47ae4a31a0827c0dd66576">More...</a><br /></td></tr>
-<tr class="separator:aafcf93675c47ae4a31a0827c0dd66576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4b66bbd8bee4f5cfb332c75db1f2b6b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; sample_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html#ab4b66bbd8bee4f5cfb332c75db1f2b6b">kkmeans::core::anonymous_namespace{clusterization.cpp}::read_from</a> (std::istream &amp;istrm)</td></tr>
-<tr class="memdesc:ab4b66bbd8bee4f5cfb332c75db1f2b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading data from an input stream.  <a href="namespacekkmeans_1_1core_1_1anonymous__namespace_02clusterization_8cpp_03.html#ab4b66bbd8bee4f5cfb332c75db1f2b6b">More...</a><br /></td></tr>
-<tr class="separator:ab4b66bbd8bee4f5cfb332c75db1f2b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implimentation of the class "Clusterize". </p>
+<dl class="section author"><dt>Author</dt><dd>Maxim <a href="#" onclick="location.href='mai'+'lto:'+'joh'+'n.'+'jas'+'pe'+'r.d'+'oe'+'@gm'+'ai'+'l.c'+'om'; return false;">john.<span style="display: none;">.nosp@m.</span>jasp<span style="display: none;">.nosp@m.</span>er.do<span style="display: none;">.nosp@m.</span>e@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a> </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2020 </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
